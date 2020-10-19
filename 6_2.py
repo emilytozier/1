@@ -2,16 +2,11 @@
 from collections import Counter
 from typing import List, Any
 
-
 f=open('input_write.txt','w',encoding='utf8')
-
-
-
 elements = []
 with open('input.txt') as inf:
     for line in inf:
         elements.extend(line.split())
-
 
 counter = Counter(elements)
 pairs = [(-pair[1], pair[0]) for pair in counter.most_common()]
