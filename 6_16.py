@@ -1,3 +1,5 @@
+#Вася составил раскладку по продуктам на один день (она на листе "Раскладка") с указанием названия продукта и его количества в граммах. 
+#Посчитайте 4 числа: суммарную калорийность и граммы белков, жиров и углеводов. Числа округлите до целых вниз и введите через пробел.
 import openpyxl
 import math
 wb = openpyxl.load_workbook('trekking2.xlsx')
@@ -23,6 +25,6 @@ for k,v in mday.items():
     k_data = product[k]
     v_data = [i * (v/100) for i in k_data]
     f_data = [(f_data[i] + v_data[i]) for i in range(len(f_data))]
-    # print(k, v, k_data, v_data, end='\n\n')  # ТЕСТ ДАННЫХ
+    
 g=list(map(int, f_data))
 print(*g)
