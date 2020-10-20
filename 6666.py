@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #задача чтобы изъять из множества excel все нужные ячейки и вывести их в остортированном виде
+=======
+#задача чтобы изъять из множества excel файлов (которые в папке rogaikopyta) все нужные ячейки и вывести их в остортированном виде
+>>>>>>> e60b6cc6d2d1b82369faf81e00082ae9ec22eebf
 
 import openpyxl
 from openpyxl import load_workbook
@@ -7,8 +11,7 @@ import pathlib
 from collections import OrderedDict
 
 path = 'C:/Users/User/Documents/Visual Studio 2017/DjangoWebProject1/DjangoWebProject1/app/rogaikopyta'
-#for file in os.listdir(path):
-    #wb=load_workbook(os.path.join(path, file), read_only=True)
+
 for k in range(1,1001):
     wb = openpyxl.load_workbook('C:/Users/User/Documents/Visual Studio 2017/DjangoWebProject1/DjangoWebProject1/app/rogaikopyta/{id}.xlsx'.format(id=k))
     sheet=wb['Sheet']
@@ -22,6 +25,9 @@ for k in range(1,1001):
     for i in sorted(g):
         print(i, slo[k])
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> e60b6cc6d2d1b82369faf81e00082ae9ec22eebf

@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+#в таблице зарплаты для разных профессий. выведите регион с самой высокой медианной зарплатой и название профессии с самой высокой средней зарплатой
 import openpyxl
 from statistics import median, mean
 
@@ -28,5 +29,4 @@ for prof in proffs:
 print(sorted(regions.items(), key=lambda x: x[1])[-1][0],
 sorted(proffs.items(), key=lambda x: x[1])[-1][0], sep=' ')
 
-      #key=lambda x: x[1])[-1][0]
-#key=lambda x: x[1])[-1][0], sep=' '
+  

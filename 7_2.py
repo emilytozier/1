@@ -1,3 +1,4 @@
+##html-код на питоне: html-файл, в котором будет таблица размером 10 на 10, которая должна содержать таблицу умножения для чисел от 1 до 10
 with open('new2.html', 'w', encoding='utf8') as new_file:
     print('<html>', '<body>', '<table>', file=new_file, sep='\n')
     for i in range(1, 11):
