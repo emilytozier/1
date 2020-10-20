@@ -1,4 +1,5 @@
-
+#В файле https://stepik.org/media/attachments/lesson/209723/4.html находится одна таблица. 
+#Просуммируйте все числа в ней. Теперь мы добавили разных тегов для изменения стиля отображения.
 from urllib.request import urlopen
 
 from bs4 import BeautifulSoup
