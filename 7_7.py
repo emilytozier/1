@@ -1,3 +1,5 @@
+#Вам необходимо обработать ее с помощью BeautifulSoup и вывести все ссылки, которые есть на этой странице, в том порядке как они встречались по одной в строке.
+#Под ссылкой понимается содержимое аттрибута href тега a.
 from urllib.request import urlopen, urlretrieve
 from bs4 import BeautifulSoup
 import re
