@@ -7,3 +7,4 @@ with open('input_write.txt', 'w') as out:
     out.write(*filter(lambda line: len(line) == maxlen, s))
 out.close()
 inf.close()
+jk

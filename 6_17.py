@@ -37,9 +37,7 @@ days=dict()
 for i in range(2, sheet.max_row+1):
     day = sheet.cell(row=i,column=1).value
     kal=v in j_data.items()
-        #days[day]=[v in j_data.items()]
-        #product = sheet.call(row=i, column=2).value
-    days[day]= days.get(day, 0) + kal
+        days[day]= days.get(day, 0) + kal
 print(days)
 
 
