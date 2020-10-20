@@ -1,3 +1,8 @@
+#Вам дана область карты https://stepik.org/media/attachments/lesson/266078/mapcity.osm
+
+#Пройдите по первым ста node в этой области и выведите для каждого три числа: id, широту (атрибут lat) и долготу (атрибут lon).
+#Числа для каждого node выводите в отдельной строке, разделяя одним пробелом. Обрабатывать node нужно в том же порядке, в котором они встречаются во входном файле
+
 from urllib.request import urlopen, urlretrieve
 from bs4 import BeautifulSoup
 from urllib.request import  urlopen, urlretrieve
