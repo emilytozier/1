@@ -1,9 +1,14 @@
+#В файле https://stepik.org/media/attachments/lesson/258944/New-York.html есть несколько таблиц, у которых атрибут class равен wikitable collapsible collapsed.
+
+#Вам необходимо найти первые три такие таблицы и преобразовать их в csv-таблицы. В csv-таблице ячейки должны разделяться запятой, а строки не должны окружаться кавычками. 
+#Таблицы следует разделять пустой строкой.
+
 from urllib.request import urlopen
 
 from bs4 import BeautifulSoup
 
 
-response = urlopen('file:///C:/Users/User/Documents/Visual%20Studio%202017/DjangoWebProject1/DjangoWebProject1/app/New-York%20(1).html')
+response = urlopen('https://stepik.org/media/attachments/lesson/258944/New-York.html ')
 html = response.read().decode('utf-8')
 soup = BeautifulSoup(html, 'html.parser')
 
