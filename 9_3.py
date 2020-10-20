@@ -1,3 +1,4 @@
+#По данным портала открытых данных Москвы определите количество дней, когда освещение включено 12 часов или более.
 from urllib.request import  urlopen, urlretrieve
 
 import json
