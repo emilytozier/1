@@ -1,4 +1,4 @@
-
+##распарсить страницу, найти по тегу и классу второй элемент и вывести его
 from urllib.request import urlopen
 
 from bs4 import BeautifulSoup

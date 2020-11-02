@@ -1,3 +1,7 @@
+#В этой задаче достаточно вам необходимо найти все внутренние ссылки, которые есть в обеих статьях: 
+#https://stepik.org/media/attachments/lesson/258943/Moscow.html и https://stepik.org/media/attachments/lesson/258944/New-York.html и вывести 
+#их в алфавитном порядке по одной в строке.
+
 from urllib.request import urlopen
 
 from bs4 import BeautifulSoup

@@ -1,3 +1,4 @@
+#с помощью скрипта на Питоне и посчитайте, какой язык упоминается чаще Python или C++ (ответ должен быть одной из этих двух строк)
 from urllib.request import urlopen, urlretrieve
 from bs4 import BeautifulSoup
 import re
