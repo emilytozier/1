@@ -2,7 +2,7 @@ from urllib.request import urlopen, urlretrieve
 from bs4 import BeautifulSoup
 import re
 
-resp = urlopen("file:///C:/Users/User/Documents/Visual%20Studio%202017/DjangoWebProject1/DjangoWebProject1/app/2.html")
+resp = urlopen("https://stepik.org/media/attachments/lesson/209719/2.html ")
 html = resp.read().decode('utf8')
 #soup = BeautifulSoup(html, 'html.parser')
 
